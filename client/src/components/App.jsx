@@ -42,6 +42,7 @@ const App = props => {
   useEffect(() => {
     if (authenticated) {
       fetchObservations(userSession);
+      // userSession.deleteFile('disclaimer.json')
     }
   }, [fetchObservations, authenticated, userSession]);
 
